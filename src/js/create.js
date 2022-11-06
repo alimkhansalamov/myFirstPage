@@ -1,20 +1,23 @@
-const form = document.querySelector('form');
+// working on styles, js has to be changed a lot
 
-const createTodo = async (e) => {
-  e.preventDefault();
+// const form = document.querySelector('form');
+// const editBtn = document.querySelector('.edit');
 
-  const doc = {
-    title: form.title.value,
-    body: form.body.value,
-  };
+// const createTodo = async (e) => {
+//   e.preventDefault();
 
-  await fetch('http://localhost:3000/todos', {
-    method: 'POST',
-    body: JSON.stringify(doc),
-    headers: { 'Content-Type': 'application/json' },
-  });
+//   const doc = {
+//     title: form.title.value,
+//     body: form.body.value,
+//   };
 
-  window.location.replace('/src/index.html');
-};
+//   await fetch('http://localhost:3000/todos', {
+//     method: 'POST',
+//     body: JSON.stringify(doc),
+//     headers: { 'Content-Type': 'application/json' },
+//   });
 
-form.addEventListener('submit', createTodo);
+//   window.location.replace('/src/index.html');
+// };
+
+// form.addEventListener('submit', createTodo);

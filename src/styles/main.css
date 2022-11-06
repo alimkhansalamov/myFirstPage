@@ -1,0 +1,119 @@
+.main {
+  grid-area: 2 / 1 / 5 / 6;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.main__leftAside {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: rgb(209, 162, 8);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.main__leftAside ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.main__leftAside ul li a {
+  text-decoration: none;
+}
+
+.main__todos {
+  grid-area: 1 / 2 / 2 / 5;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1;
+}
+
+.main__todos--add {
+  grid-area: 1 / 1 / 2 / 2;
+
+  background-color: rgb(107, 107, 107);
+}
+.main__todos--add > h3 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 100%;
+}
+
+.main__todos--add > .create {
+  display: grid;
+  row-gap: 10px;
+}
+
+.main__todos--add > .create > input {
+  min-height: 40px;
+  font-family: Courier;
+  font-size: 25px;
+  border: none;
+}
+
+.main__todos--add > .create > textarea {
+  min-height: 400px;
+  resize: none;
+  font-family: Courier;
+  font-size: 20px;
+}
+
+.main__todos--add > .create > button {
+  min-height: 50px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #63ff91;
+  opacity: 1;
+  border-radius: 15px;
+  font-family: Courier;
+  font-size: 20px;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.main__todos--add > .create > button:hover {
+  background-color: #63ff91;
+}
+
+.main__todos--todos {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: rgb(184, 241, 161);
+  padding: 10px;
+}
+.main__rightAside {
+  grid-area: 1 / 5 / 2 / 6;
+  background-color: rgb(209, 162, 8);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.main__rightAside ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.main__rightAside ul li a {
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: auto-fill;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .main__leftAside {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+
+  .main__todos {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+
+  .main__rightAside {
+    grid-area: 3 / 1 / 4 / 6;
+  }
+}

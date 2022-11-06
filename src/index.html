@@ -4,38 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <title>My Start Page</title>
   </head>
   <body>
-    <!-- <header>
-      <section class="header__weather">Het weer</section>
-      <section class="header__name">Name of this page</section>
-      <section class="header__clock">De klok</section>
-    </header> -->
+    <div class="container">
+      <header class="header">
+        <section class="header__weather">
+          <section class="header__weather--search">Search</section>
+          <section class="header__weather--city"><p>Izegem</p></section>
+          <section class="header__weather--degrees"><p>27°C</p></section>
+          <section class="header__weather--condition"><p>Rainy</p></section>
+        </section>
+        <section class="header__name"><h1>ALL IN ONE</h1></section>
+        <section class="header__clock">De klok en kalender</section>
+      </header>
 
-    <main>
-      <!-- <aside class="main__leftAside">Programming</aside> -->
-      <section class="main__todos">
-        <nav>
-          <h1>All Todos</h1>
-          <a href="./create.html">Add a new todo</a>
-        </nav>
+      <main class="main">
+        <aside class="main__leftAside">
+          <h3>Programming</h3>
+          <ul class="ul ul__left">
+            <li><a href="#">Toledo</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Udemy</a></li>
+            <li><a href="#">W3Schools</a></li>
+            <li><a href="#">Codewars</a></li>
+            <li><a href="#">Codepen</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">SRCWebsites</a></li>
+          </ul>
+        </aside>
+        <section class="main__todos">
+          <section class="main__todos--add">
+              <h3>All Todos</h3>
+            <form class="create">
+              <input type="text" name="title" required placeholder="Todo title" />
+              <textarea name="body" required placeholder="Todo text"></textarea>
+              <button>Create</button>
+            </form>
+          </section>
+          <sections class="main__todos--todos">
+            <form class="search">
+              <input type="text" name="term" placeholder="Search..." />
+            </form>
+            <h3>Sing up toledo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellendus quos eum</p>
+            <h3>Indienen opdracht Web Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellend nventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore </p>
+            <h3>Documenten doorsturen</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore sed repellend nventore sed repellendus quos eum Inventore sed repellendus quos eumm ipsum dolor sit amet consectetur adipisicing elit. Inventore sed repellendus q
+              uos eum Inventore sed repellendus quos eum Inventore </p>
+          </section>
+        </section>
+        <aside class="main__rightAside">
+          <h3>Other</h3>
+          <ul class="ul ul__right">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Google Calendar</a></li>
+            <li><a href="#">Pomodoro</a></li>
+            <li><a href="#">Typing</a></li>
+          </ul>
+        </aside>
+      </main>
 
-        <form class="search">
-          <input type="text" name="term" placeholder="Search..." />
-        </form>
-
-        <div class="todos"></div>
-      </section>
-      <!-- <aside class="main__rightAside">RIGHT</aside> -->
-    </main>
-
-    <!-- <footer>
-      <section class="footer__left">EXTRA 1</section>
-      <section class="footer__middle">EXTRA 2</section>
-      <section class="footer__right">EXTRA 3</section>
-    </footer> -->
+      <footer class="footer">
+        <section class="footer__left">
+          <h2>Hier misschien informatie over iets</h2>
+          <h2>Ссылки на ютуб и соц. медия может</h2>
+        </section>
+      </footer>
+    </div>
 
     <script src="./js/index.js"></script>
   </body>
