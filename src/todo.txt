@@ -1,1 +1,11 @@
-// section 13 - 14 -> weather app
+HTML
+
+
+
+
+CSS
+
+
+JAVASCRIPT
+
+- Programming and other websites are visible only after click (JS)
