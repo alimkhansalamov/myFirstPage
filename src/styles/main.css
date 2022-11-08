@@ -27,7 +27,6 @@
 .main__leftAside ul li:hover {
   background-color: #fff;
   border-radius: 3px;
-  /* border: 1px solid #63ff91; */
   font-size: 1.3em;
 }
 
@@ -94,9 +93,17 @@
 
 .main__todos--todos {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: #63ff91;
+  background-color: #fff;
+
   padding: 10px;
   font-size: 1.5em;
+}
+
+.main__todos--todos--todo {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
 }
 .main__rightAside {
   grid-area: 1 / 7 / 2 / 8;

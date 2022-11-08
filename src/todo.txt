@@ -2,9 +2,23 @@ HTML
 
 
 CSS
+- check matching colors and change the layout a bit
 - header and footer height smaller and main bigger
 - header name witte borders zetten
+- add body background
+
+
+------------------FONTS
+change main font to 10px and use REM to specifie the size. Or is it something else?
+It has to change the size according to de size of the window
 
 JAVASCRIPT
 
 - Programming and other websites are visible only after click when max-width 768px and 500px (JS)
+
+
+
+
+
+TODOS
+-- change the size of adding todo and add categories and color change ((not)urgent)
