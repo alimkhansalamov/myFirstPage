@@ -1,11 +1,10 @@
 HTML
 
 
-
-
 CSS
-
+- header and footer height smaller and main bigger
+- header name witte borders zetten
 
 JAVASCRIPT
 
-- Programming and other websites are visible only after click (JS)
+- Programming and other websites are visible only after click when max-width 768px and 500px (JS)
